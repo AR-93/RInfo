@@ -100,7 +100,7 @@ function setCookie(name, value, days) {
   const swiper = new Swiper('.swiper', {
     loop: true, // Infinite loop
     autoplay: {
-      delay: 4000, // Slide every 3 seconds
+      delay: 3000, // Slide every 3 seconds
     },
     navigation: {
       nextEl: '.swiper-button-next',
