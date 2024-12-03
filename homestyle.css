@@ -8,7 +8,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background: linear-gradient(to bottom right, #fff 50%, #ffdae0 50%);
+    background: linear-gradient(to bottom right, #fff 50%, #0032 70%);
     position: relative;
   }
   
@@ -123,10 +123,9 @@ body {
     }
   }
   
-  /* Media Queries for Responsiveness */
   @media (max-width: 1200px) {
     main {
-      width: 80%; /* Adjust main section width for larger screens */
+      width: 80%; 
     }
   
     .search-bar {
@@ -134,7 +133,7 @@ body {
     }
   
     .swiper {
-      width: 80%; /* Make swiper width smaller on larger screens */
+      width: 80%; 
     }
   }
   
@@ -146,7 +145,7 @@ body {
     }
   
     main {
-      width: 90%; /* Increase width for smaller screens */
+      width: 90%; 
     }
   
     .search-bar {
@@ -155,7 +154,7 @@ body {
   
     .swiper {
       width: 100%;
-      margin-top: 20px; /* Add spacing to the swiper on smaller screens */
+      margin-top: 20px;
     }
   
     .popular {
@@ -165,7 +164,7 @@ body {
   
   @media (max-width: 768px) {
     main h1 {
-      font-size: 2rem; /* Reduce font size for smaller devices */
+      font-size: 2rem; 
     }
   
     .search-bar {
@@ -174,7 +173,7 @@ body {
     }
   
     .swiper {
-      height: 200px; /* Reduce swiper height for smaller screens */
+      height: 200px; 
     }
   
     .popular a {
@@ -185,7 +184,7 @@ body {
   
   @media (max-width: 480px) {
     main h1 {
-      font-size: 1.5rem; /* Smaller font size for mobile devices */
+      font-size: 1.5rem;
     }
   
     .search-bar input,
@@ -195,7 +194,7 @@ body {
     }
   
     .swiper {
-      height: 180px; /* Adjust height further for mobile */
+      height: 180px; 
     }
   
     footer {
