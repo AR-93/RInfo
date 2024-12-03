@@ -187,8 +187,14 @@ section p::selection {
 footer {
   background-color: var(--primary-color);
   color: var(--white);
-  padding: 20px;
+  padding: 10px ;
   text-align: center;
+  border-radius: 10px;
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+
+}
+footer:hover {
+  transform: scale(1.02);
 }
 
 footer a {
@@ -215,7 +221,9 @@ footer a {
   section article {
     flex: 0 0 100%;
     margin-bottom: 15px;
+
   }
+  
 }
 
 

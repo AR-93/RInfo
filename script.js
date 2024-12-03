@@ -90,4 +90,25 @@ function setCookie(name, value, days) {
     });
   });
   
+
+
+
+
   
+
+  
+  const swiper = new Swiper('.swiper', {
+    loop: true, // Infinite loop
+    autoplay: {
+      delay: 4000, // Slide every 3 seconds
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+

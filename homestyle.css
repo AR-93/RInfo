@@ -1,0 +1,210 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #fff 50%, #ffdae0 50%);
+    position: relative;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+  }
+  
+  main {
+    width: 60%;
+    margin:auto 40px ;
+  }
+  
+  main h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    margin-top: 30px;
+  }
+  
+  main p {
+    font-size: 1rem; /* Adjusted for readability */
+  }
+  
+  .search-bar {
+    display: flex;
+    margin-bottom: 20px;
+    width: 100%; /* Allow the search bar to be responsive */
+    max-width: 400px; /* Maximum width */
+  }
+  
+  .search-bar input {
+    flex: 1;
+    padding: 8px;
+    font-size: 0.9rem;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+  }
+  
+  .search-bar button {
+    background-color: #3398db;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+  }
+  
+  .search-bar button:hover {
+    border-radius: 8px;
+  }
+  
+  .popular {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .popular span {
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  
+  .popular a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #3398db;
+    transition: transform 0.5s ease;
+  }
+  
+  .popular a:hover {
+    transform: scale(1.04);
+  }
+  
+  .swiper {
+    position: relative;
+    width: 100%; /* Make the swiper responsive */
+    max-width: 400px; /* Set a maximum width */
+    height: auto;
+    margin-left: auto;
+    margin-right: 0;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .swiper-slide img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .swiper:hover {
+    transform: scale(1.2);
+  }
+
+
+
+
+
+
+  
+  
+  .cursor {
+    animation: blink 1s step-end infinite;
+  }
+  
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 1200px) {
+    main {
+      width: 80%; /* Adjust main section width for larger screens */
+    }
+  
+    .search-bar {
+      max-width: 350px;
+    }
+  
+    .swiper {
+      width: 80%; /* Make swiper width smaller on larger screens */
+    }
+  }
+  
+  @media (max-width: 992px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 15px 30px;
+    }
+  
+    main {
+      width: 90%; /* Increase width for smaller screens */
+    }
+  
+    .search-bar {
+      max-width: 300px;
+    }
+  
+    .swiper {
+      width: 100%;
+      margin-top: 20px; /* Add spacing to the swiper on smaller screens */
+    }
+  
+    .popular {
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    main h1 {
+      font-size: 2rem; /* Reduce font size for smaller devices */
+    }
+  
+    .search-bar {
+      width: 100%;
+      max-width: 100%;
+    }
+  
+    .swiper {
+      height: 200px; /* Reduce swiper height for smaller screens */
+    }
+  
+    .popular a {
+      font-size: 0.9rem;
+      margin-right: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    main h1 {
+      font-size: 1.5rem; /* Smaller font size for mobile devices */
+    }
+  
+    .search-bar input,
+    .search-bar button {
+      padding: 8px;
+      font-size: 0.8rem;
+    }
+  
+    .swiper {
+      height: 180px; /* Adjust height further for mobile */
+    }
+  
+    footer {
+      padding: 10px;
+      text-align: center;
+    }
+  
+    .popular a {
+      font-size: 0.8rem;
+    }
+  }
+  

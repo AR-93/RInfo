@@ -11,44 +11,87 @@
       href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="homestyle.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>RInfo Home</title>
   </head>
   <body>
-    <header>
-      <div>
-        <a href="index.html"
-          ><img src="images/design/Alogo.png" alt="Logo" width="100" />
-        </a>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="general.html">General</a></li>
-          <li><a href="sport.html">Sport</a></li>
-          <li><a href="cs.html">Computer Science</a></li>
-          <li><a href="tech.html">Tech</a></li>
-          <li><a href="entertainment.html">Etertainment</a></li>
-        </ul>
-      </nav>
-    </header>
-    <section>
-      <div>
-        <h1>What matches your interest.</h1>
+    <div class="container">
+      <header>
+        <div>
+          <a href="index.html"
+            ><img src="images/design/logo.png" alt="logo" width="100"
+          /></a>
+        </div>
+        <div>
+          <div class="hamburger-menu">
+            <div class="hamburger-menu-bar bar1"></div>
+            <div class="hamburger-menu-bar bar2"></div>
+            <div class="hamburger-menu-bar bar3"></div>
+          </div>
+
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="sport.html">Sport</a></li>
+              <li><a href="cs.html">Computer Science</a></li>
+              <li><a href="tech.html">Tech</a></li>
+              <li><a href="entertainment.html">Entertainment</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <h1>What <span style="color:#3398db ; font-style: italic;">matches</span> your interest.<span class="cursor">|</span></h1>
+
         <p>
           Stay informed, inspired, and engaged with topics that matter to you
           most.
         </p>
+        <br />
+        <div class="search-bar">
+          <input type="text" placeholder="What are you looking for?" />
+          <button>Search</button>
+        </div>
+        <div class="popular">
+          <span>Popular:</span>
+          <a href="#">AI</a>
+          <a href="#">Best Movies</a>
+          <a href="#">Football</a>
+          <a href="#">Meta</a>
+        </div>
+      </main>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Slide 1" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://static01.nyt.com/images/2020/09/25/sports/25soccer-nationalWEB1/merlin_177451008_91c7b66d-3c8a-4963-896e-54280f374b6d-videoSixteenByNineJumbo1600.jpg" alt="Slide 2" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://images.unsplash.com/photo-1607473129014-0afb7ed09c3a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Slide 3" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Slide 4" />
+          </div>
+        </div>
+        <!-- Optional navigation buttons -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <!-- Optional pagination -->
+        <div class="swiper-pagination"></div>
       </div>
-      <div>
-        <label for="searchbar"
-          ><input
-            type="search"
-            name="searchbar"
-            id="searchbar"
-            placeholder="What are you looking for?"
-        /></label>
-      </div>
-    </section>
+    </div>
+    <br>
+    <br>
+
     <footer>
       <div><span>2024</span>&#169;</div>
       <div>
@@ -64,5 +107,6 @@
         </p>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
