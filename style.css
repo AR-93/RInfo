@@ -23,7 +23,6 @@ body {
   padding: 0 15px;
 }
 
-/* Header Styling with Sticky Navigation */
 header {
   background-color: var(--white);
   position: sticky;
@@ -71,7 +70,7 @@ header nav ul li:hover {
     152,
     219,
     0.1
-  ); /* Light blue background on hover */
+  ); 
 }
 
 header nav ul li a {
@@ -103,7 +102,6 @@ header nav ul li a:hover {
   color: var(--accent-color);
 }
 
-/* Dynamic Section Styling */
 section {
   background-color: var(--white);
   margin: 20px 0;
@@ -116,7 +114,6 @@ section {
   align-items: center;
 }
 
-/* Alternate Layout for Even and Odd Sections */
 section:nth-child(even) {
   flex-direction: row-reverse;
   background-color: #f9f9f9;
@@ -183,7 +180,7 @@ section p::selection {
     background: yellow;
   }
 
-/* ter Styling */
+
 footer {
   background-color: var(--primary-color);
   color: var(--white);
@@ -202,7 +199,7 @@ footer a {
   text-decoration: none;
 }
 
-/* Responsive Design */
+
 @media screen and (max-width: 768px) {
   header {
     flex-direction: column;
@@ -265,7 +262,6 @@ footer a {
   transition: 0.4s;
 }
 
-/* Mobile Navigation Styles */
 @media screen and (max-width: 768px) {
   .hamburger-menu {
     display: flex;
@@ -298,7 +294,6 @@ footer a {
     margin: 20px 0;
   }
 
-  /* Hamburger Menu Animation */
   .hamburger-menu.active .bar1 {
     transform: rotate(-45deg) translate(-5px, 6px);
   }
@@ -333,17 +328,17 @@ footer a {
 
 
 
-/* General Icon Styling */
+
 .icon {
   display: inline-flex;
   align-items: center;
   font-size: 10px;
   margin-right: 20px;
-  color: #666; /* Default color for text */
+  color: #666; 
 }
 
 .icon::before {
-  font-family: "Font Awesome 6 Free"; /* Font Awesome icons */
+  font-family: "Font Awesome 6 Free"; 
   font-weight: 900;
   margin-right: 8px;
   font-size: 18px;
@@ -371,26 +366,26 @@ footer a {
   scale: 1;
 }
 
-/* Specific Icons */
+
 .icon.views::before {
-  content: "\f06e"; /* Eye icon (views) */
+  content: "\f06e";
   color: #125f927c;
   font-size: 13px;
-  scale: 1; /* Facebook blue for views */
+  scale: 1; 
 }
 
 .icon.likes::before {
-  content: "\f164"; /* Heart icon (likes) */
-  color: var(--accent-color); /* Red for likes */
+  content: "\f164"; 
+  color: var(--accent-color); 
 }
 
 .icon.comments::before {
-  content: "\f075"; /* Comment icon */
-  color: var(--primary-color); /* Blue for comments */
+  content: "\f075"; 
+  color: var(--primary-color);
 }
 
 .icon.shares::before {
-  content: "\f064"; /* Share icon */
-  color: #2c3e50; /* LinkedIn blue for shares */
+  content: "\f064"; 
+  color: #2c3e50; 
 }
 

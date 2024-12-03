@@ -31,14 +31,14 @@ body {
   }
   
   main p {
-    font-size: 1rem; /* Adjusted for readability */
+    font-size: 1rem; 
   }
   
   .search-bar {
     display: flex;
     margin-bottom: 20px;
-    width: 100%; /* Allow the search bar to be responsive */
-    max-width: 400px; /* Maximum width */
+    width: 100%; 
+    max-width: 400px; 
   }
   
   .search-bar input {
@@ -87,8 +87,8 @@ body {
   
   .swiper {
     position: relative;
-    width: 100%; /* Make the swiper responsive */
-    max-width: 400px; /* Set a maximum width */
+    width: 100%; 
+    max-width: 400px; 
     height: auto;
     margin-left: auto;
     margin-right: 0;
